@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('LaunchDocker') {
+        stage('Docker') {
             steps {
                 bat 'docker build -t myapp .'
             }
